@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>INDI TECHNOLOGY</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-zinc-950">
+
+    <!-- NAV -->
+    <nav class="flex items-center justify-between bg-transparent p-10 mx-10">
+        <a href="home.html"><img src="aset/INDI-logo.png" alt="Company Logo" class="h-12 w-auto"></a>
+
+        <!-- MENU -->
+        <div id="menu-toggle" class="h-10 w-10 cursor-pointer">
+            <svg class="h-full w-full" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 6H20M4 12H20M4 18H20" stroke="white" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </div>
+
+        <div id="mobile-menu" class="fixed top-0 left-0 w-full h-full bg-blue-500 hidden">
+            <div class="flex items-center justify-end p-4">
+                <div id="close-menu" class="h-10 w-10 cursor-pointer text-white">
+                    <!-- CLOSE MENU -->
+                    <svg class="h-full w-full my-6 -mx-16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 18L18 6M6 6L18 18" stroke="white" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+            </div>
+            <div class="flex flex-col text-center space-y-10 my-48">
+                <a href="home.html" class="text-white text-2xl font-semibold hover:text-zinc-950 duration-300">Home</a>
+                <a href="about.html" class="text-white text-2xl font-semibold hover:text-zinc-950 duration-300">About</a>
+                <a href="contact.html" class="text-white text-2xl font-semibold hover:text-zinc-950 duration-300">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <h1 class="text-white font-semibold text-3xl text-center my-56">
+        Main Menu 3D
+    </h1>
+
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        document.getElementById('close-menu').addEventListener('click', function () {
+            document.getElementById('mobile-menu').classList.add('hidden');
+        });
+
+    </script>
+
+</body>
+</html>
